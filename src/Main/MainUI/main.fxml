@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="325.0" style="-fx-background-color: #181818; -fx-background-radius: 10 10 10 10;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.MainUI.MainController">
+   <ImageView fx:id="dragIcon" fitHeight="13.0" fitWidth="13.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../images/drag.png" />
+   </ImageView>
+   <Text fx:id="name" fill="#aeaaaa" layoutX="58.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="King Von - Demon" textAlignment="CENTER" wrappingWidth="213.181640625">
+      <font>
+         <Font name="Calibri Light" size="12.0" />
+      </font>
+   </Text>
+   <JFXButton fx:id="shuffle" alignment="CENTER" contentDisplay="CENTER" layoutX="46.0" layoutY="31.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="32.0" style="-fx-graphic: url('@../../../images/email.png'); -fx-background-image: url('@../../../images/email.png');">
+      <graphic>
+         <ImageView fx:id="shuffleIcon" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../../images/shuffle_0.png" />
+         </ImageView>
+      </graphic>
+   </JFXButton>
+   <JFXButton fx:id="previous" contentDisplay="CENTER" ellipsisString="" layoutX="83.0" layoutY="26.0" prefHeight="36.0" prefWidth="36.0" text="Button" textFill="TRANSPARENT">
+      <graphic>
+         <ImageView fx:id="previousIcon" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../../images/previous.png" />
+         </ImageView>
+      </graphic>
+   </JFXButton>
+   <JFXButton fx:id="play" contentDisplay="CENTER" ellipsisString="" layoutX="133.0" layoutY="19.0" prefHeight="52.0" prefWidth="48.0" textFill="TRANSPARENT">
+      <graphic>
+         <ImageView fx:id="playIcon" fitHeight="44.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../../images/play.png" />
+         </ImageView>
+      </graphic>
+   </JFXButton>
+   <JFXButton fx:id="next" contentDisplay="CENTER" ellipsisString="" layoutX="195.0" layoutY="26.0" prefHeight="36.0" prefWidth="36.0" textFill="TRANSPARENT">
+      <graphic>
+         <ImageView fx:id="nextIcon" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../../images/next.png" />
+         </ImageView>
+      </graphic>
+   </JFXButton>
+   <JFXButton fx:id="repeat" contentDisplay="CENTER" layoutX="252.0" layoutY="31.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="32.0" style="-fx-graphic: url('@../../../images/email.png'); -fx-background-image: url('@../../../images/email.png');">
+      <graphic>
+         <ImageView fx:id="repeatIcon" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../../images/repeat_0.png" />
+         </ImageView>
+      </graphic>
+   </JFXButton>
+   <JFXSlider fx:id="progress" blockIncrement="5.0" layoutX="40.0" layoutY="75.0" minorTickCount="4" prefHeight="14.0" prefWidth="245.0" value="1.0" />
+   <JFXButton fx:id="minimize" contentDisplay="CENTER" layoutX="281.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="19.0" style="-fx-graphic: url('@../../../images/email.png'); -fx-background-image: url('@../../../images/email.png');">
+      <graphic>
+         <ImageView fx:id="minimizeIcon" fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../../images/minimize.png" />
+         </ImageView>
+      </graphic>
+   </JFXButton>
+   <JFXButton fx:id="close" contentDisplay="BOTTOM" layoutX="304.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="19.0" style="-fx-graphic: url('@../../../images/email.png'); -fx-background-image: url('@../../../images/email.png');">
+      <graphic>
+         <ImageView fx:id="closeIcon" fitHeight="12.0" fitWidth="11.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../../images/close.png" />
+         </ImageView>
+      </graphic>
+   </JFXButton>
+   <Text fx:id="remaining" fill="#aeaaaa" layoutX="286.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-02:25">
+      <font>
+         <Font name="Calibri Light" size="13.0" />
+      </font>
+   </Text>
+   <Text fx:id="played" fill="#aeaaaa" layoutX="7.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00">
+      <font>
+         <Font name="Calibri Light" size="13.0" />
+      </font>
+   </Text>
+   <JFXSlider fx:id="slowed" layoutX="303.0" layoutY="28.0" orientation="VERTICAL" prefHeight="40.0" prefWidth="19.0" />
+   <JFXSlider fx:id="volume" layoutX="284.0" layoutY="28.0" orientation="VERTICAL" prefHeight="40.0" prefWidth="19.0" />
+</AnchorPane>
